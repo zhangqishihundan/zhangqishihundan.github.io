@@ -168,7 +168,27 @@
             -webkit-font-smoothing: subpixel-antialiased;
             font-smoothing: subpixel-antialiased;
         }
-        
+
+        #effect-hint {
+            position: absolute;
+            right: 28px;
+            bottom: 22px;
+            z-index: 30;
+            text-align: right;
+            font-size: 0.78em;
+            letter-spacing: 0.16em;
+            color: rgba(255, 255, 255, 0.62);
+            text-transform: uppercase;
+            line-height: 1.8;
+        }
+
+        #effect-name {
+            display: block;
+            font-size: 1.05em;
+            color: rgba(168, 255, 239, 0.95);
+            text-shadow: 0 0 20px rgba(78, 247, 225, 0.35);
+        }
+
         #container p strong {
             color: #b3abc5;
             font-size: 5em;
@@ -246,11 +266,14 @@
 
     </div>
 
+    <div id="effect-hint">
+        <span id="effect-name">Original Tendrils</span>
+        click to switch curves
+    </div>
+
     <canvas id="canvas"></canvas>
 
-
-
-    <script src="js/bootstrapmb.com.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
